@@ -13812,9 +13812,8 @@ JEnqzL82NQTC7FREFAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>**Answer: If we look at max_depth = 10 it's training score is the highest of all figures but like on the other figures it's steadily decreasing the more training points it reads starting at around 50 training points, it also doesn't seem to have any uncertainty curve.
-The test data's score seems to be lower than the figures with max_depth = 3 or 6 but the training score are the best which suggest this model is overfitting.</p>
-<p>This model also represents high Variance as the gap between the 2 lines is the greatest of all the models**</p>
+<p>**Answer: If we look at max_depth = 4 the training score's curve doesn't seem to increase at all the more data points we add, when it's the smallest at 50 training points we produce the best training score and then it starts diminishing the more data we add.</p>
+<p>For the test curve we can notice increments in the score the more training points we add, the model seems to quickly learn with a small number of training points but as we keep adding more only a slight increment in it's score is noticed. It's unlikely that additional training points would benefit the model.</p>
 
 </div>
 </div>
@@ -14631,7 +14630,7 @@ JaxFRERE9LD/AieMSxzKNW5HAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>**Answer: The k-fold cross-validation training technique allows us to have a more accurate representation of our data by using all of our data for training and testing by splitting it in equal parts and training and testing using the data of each split and then we average the results from each test.</p>
+<p>**Answer: The k-fold cross-validation training technique allows us to have a more accurate representation of our data by splitting our dataset into k subsets. Each subset is used as the test data against the remaining data, k times until all our divisions have been tested on the rest of the data, then we average the resulting score across all k tests.</p>
 <p>This makes sure we don't run tests on highly Biased data by accidentely splitting data that doesn't generalize or represent the whole dataset**</p>
 
 </div>
